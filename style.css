@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: hsl(210, 46%, 95%);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 30px;
+  gap: 25px;
+}
+
+.card {
+  background-color: white;
+  padding: 25px 30px 28px;
+  max-width: 530px;
+  min-width: 260px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  box-shadow: 30px 30px 40px 0 hsla(217, 19%, 35%, 0.2);
+}
+
+.quote {
+  position: absolute;
+  align-self: flex-end;
+  margin-top: -25px;
+}
+
+@media (min-width: 1150px) {
+  main {
+    height: 100vh;
+    display: grid;
+    grid: 0.5fr repeat(2, 1fr) 0.5fr / auto repeat(4, 250px) auto;
+    grid-template-areas:
+      ". . . . . ."
+      ". card1 card1 card2 card5 ."
+      ". card3 card4 card4 card5 ."
+      ". . . . . .";
+    gap: 25px 30px;
+    justify-content: initial;
+    align-items: initial;
+  }
+
+  .card {
+    min-width: initial;
+    max-width: initial;
+  }
+
+  .quote {
+    margin-right: 50px;
+    margin-top: -25px;
+  }
+}
+
+p {
+  font-size: 13px;
+  margin: 0;
+  color: hsla(210, 46%, 95%, 0.75);
+}
+
+.p-dark {
+  color: hsla(217, 19%, 35%, 0.75);
+}
+
+.card1 {
+  grid-area: card1;
+  background-color: hsl(263, 55%, 52%);
+}
+
+.card2 {
+  grid-area: card2;
+  background-color: hsl(217, 19%, 35%);
+}
+
+.card3 {
+  grid-area: card3;
+}
+
+.card4 {
+  grid-area: card4;
+  background-color: hsl(219, 29%, 14%);
+}
+
+.card5 {
+  grid-area: card5;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  z-index: 1;
+}
+
+.user div span {
+  display: block;
+}
+
+.pfp {
+  border: solid 2px;
+  width: 30px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.name {
+  font-size: 0.8em;
+  font-weight: 500;
+  color: hsl(210, 46%, 95%);
+}
+
+.n-dark {
+  color: hsl(217, 19%, 35%);
+}
+
+.verified {
+  font-size: 0.7em;
+  font-weight: 500;
+  color: hsla(210, 46%, 95%, 0.5);
+}
+
+.v-dark {
+  color: hsla(217, 19%, 35%, 0.5);
+}
+
+.subject {
+  z-index: 1;
+  font-size: 1.2em;
+  color: hsl(217, 19%, 35%);
+}
+
+.white-h1 {
+  color: hsl(210, 46%, 95%);
+}
