@@ -70,7 +70,6 @@ You can use this project as a starting point for your own NFT preview card compo
 ## Acknowledgements
 
 - [Frontend Mentor](https://www.frontendmentor.io) for providing the challenge
-- Any tutorials, articles, or other resources you found helpful
 
 
 ## Contact
